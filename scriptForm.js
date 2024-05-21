@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var telefonoChecked = document.getElementById('telefonoPref').checked;
         var emailChecked = document.getElementById('emailPref').checked;
         if (!telefonoChecked && !emailChecked) { // Validacion del checkbox
-            alert('Por favor, seleccione al menos una opción en Teléfono o Email.'); // Mensaje personalizado para seleccionar al menos una opcion del checkbox
+            alert('Por favor, seleccione al menos una opción en Teléfono o Email.'); // Mensaje para seleccionar al menos una opcion del checkbox
             contactoSeleccionado = false;
         } else contactoSeleccionado = true;
         return isValid && contactoSeleccionado;
