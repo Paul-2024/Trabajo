@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -163,6 +164,12 @@ button:hover {
 @keyframes tamanio-not {
     from{font-size:1.3rem;}
     to{font-size: 1rem;}
+}
+a{
+    font-family: "Freeman", sans-serif;
+}
+a:visited{
+    color:  #5E4E41;
 }
 a:hover{
     color: rgb(184, 141, 0);
