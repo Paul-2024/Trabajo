@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Roboto Slab', serif;
+    display:grid;
     padding: 0;
     margin: 0;
     padding: 50px 0px 0px 0px;
-    background-color: #f2f2f2;  /* Gris claro */
+    background-image: linear-gradient(to bottom, #af6900, #bdbdbd)
 }
 
+main{
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.993);
+    font-family: "Roboto", sans-serif;
+    background-color: #d4bfad86;
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    width: 80%;
+    color: #920b34;
+}
 
 header {
     position: fixed;
@@ -22,6 +32,10 @@ header {
     padding: 15px;
     text-align: center;
     border-bottom: 3px solid #A99B98;  /* Marrón medio */
+}
+main p{
+    margin: 3% 5%;
+    width: 90%;
 }
 nav ul {
     list-style-type: none;
@@ -39,12 +53,24 @@ footer ul {
 }
 
 section {
-    padding-top: 70px; /* Ajusta esto según la altura de tu header */
+    margin-bottom: 4%;
+    padding-top: 45px; 
     margin-top: -70px;
 }
+
+#Nosotros{
+    margin-bottom: 6%;
+}
+
 h1#Inicio{
+    font-size: 3rem;
     padding-top: 70px;
     margin-top: -50px;
+}
+
+section:not(#Nosotros){
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 footer {
@@ -55,6 +81,10 @@ footer {
     border-top: 3px solid #A99B98;  /* Marrón medio */
 }
 
+section h3{
+    margin: 3% 5.95%;
+    width:fit-content;
+}
 /* Estilos adicionales para la sección de portafolio */
 section ul {
     display: grid;
@@ -72,6 +102,11 @@ section img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.imagen0{
+    width: 80%;
+    margin: 2% 10%;
 }
 
 .container {
@@ -150,8 +185,6 @@ button:hover {
     font-weight: bold;
 }
 
-
-
 @media (min-width: 768px) { /* Animacion navbar */
     header nav ul li a:hover{
         animation: tamanio 0.2s forwards;
@@ -167,6 +200,8 @@ button:hover {
 }
 a{
     font-family: "Freeman", sans-serif;
+    text-decoration: none;
+    color: black;
 }
 a:visited{
     color:  #5E4E41;
@@ -176,9 +211,4 @@ a:hover{
 }
 a:active {
     color: rgb(134, 103, 0);
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
